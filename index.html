@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../calculator1/style.css">
     <title>Haralds Calculator!</title>
   </head>
   <body>
-    <form>
-      Value 1: <input type="text" id="value1" /> </br>
+    <div id="calculator">
+      <h1>Calculator</h1>
+      Value 1: <input type="number" id="value1" /> </br>
        Value 2:
-      <input type="text" id="value2" /> </br>
+      <input type="number" id="value2" /> </br>
       Operator:
       <select id="operator">
         <option value="add">Add</option>
@@ -18,10 +20,14 @@
         <option value="div">Divide</option>
         <option value="mul">Multiply</option>
       </select>
-      <button onClick="calc()">Result</button>
-    </form>
+    </br>
+      <button type="button" onClick="calc()">Calculate!</button>
+
+      <div id="res">
+      <h4 id="sum">Result: </h4> <div id="result"></div>
+      </div>
+    </div>
     
-    <div id="result"></div>
     
   </body>
   <script src="main.js"></script>
